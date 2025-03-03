@@ -1,43 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
 
-        <!-- daisyui cdn -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
-        <!-- google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-    
-        <style>
-            .poppins-thin {
-                font-family: "Poppins", sans-serif;
-            }
-        </style>
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .poppins-thin {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 </head>
+
 <body class="poppins-thin">
     <header class="container mx-auto">
         <nav>
-            <div class="flex justify-between shadow-md mt-1 p-4 rounded-2xl"> 
+            <div class="flex justify-between shadow-md mt-1 p-4 rounded-2xl">
                 <div class="flex items-center gap-3">
                     <img src="assets/logo.png" alt="">
                     <h2 class="text-3xl">Dev<span class="font-bold">Board</span></h2>
                 </div>
-    
+
                 <div class="flex items-center gap-9">
-                    <button id="blog_site_left" class="btn btn-info text-white bg-[#3752FD] mt-2 rounded-lg">Back to Desk</button>
+                    <button id="blog_site_left" class="btn text-white bg-[#3752FD] mt-2 rounded-lg">Back to
+                        Desk</button>
                 </div>
             </div>
         </nav>
     </header>
 
+
+    <main class="container mx-auto">
+        <section>
+            <div>
+                <h1 class="font-bold text-2xl text-center mt-5 mb-5">Blogs</h1>
+            </div>
+
+            <div class="space-y-5">
+                <!-- question 1 -->
+                <div class="shadow-md p-5">
+                    <h1 class="font-bold mb-3">Question-1: What are the different ways to select an element in the DOM?
+                    </h1>
+                    <hr>
+                    <p class="mt-3 font-normal"> <span class="font-bold">Answer :</span> There are several ways to select an element of dom :
+                        a. By ID (getElementById), 
+                        b. By Class Name (getElementsByClassName),
+                        c. By Tag Name (getElementsByTagName),
+                        d. By CSS Selector (querySelector),
+                        e. By CSS Selector (querySelectorAll)
+                    </p>
+                </div>
+
+                <!-- question 2 -->
+                <div class="shadow-md p-5">
+                    <h1 class="font-bold mb-3">Question-2: What is the difference between innerHTML, innerText, and
+                        textContent ?</h1>
+                    <hr>
+                    <p class="mt-3 font-normal"> <span class="font-bold">Answer :</span> The difference between innerHTML, innerText and textContent are "innerHTML--Gets or sets HTML content, including tags". "innerText--Gets or sets only visible text, affected by CSS". "textContent--Gets or sets all text, including hidden text, but ignores HTML formatting".
+                    </p>
+                </div>
+
+                <!-- question 3 -->
+                <div class="shadow-md p-5">
+                    <h1 class="font-bold mb-3">Question-3: What is event delegation in the DOM?</h1>
+                    <hr>
+                    <p class="mt-3 font-normal"> <span class="font-bold">Answer :</span> Event delegation to the DOM is 
+                    </p>
+                </div>
+
+                <!-- question 4 -->
+                <div class="shadow-md p-5">
+                    <h1 class="font-bold mb-3">Question-4: What is event bubbling in the DOM?</h1>
+                    <hr>
+                    <p class="mt-3 font-normal"> <span class="font-bold">Answer :</span> Event bubbling to the DOM is a mechanism in the DOM where an event triggered on a child element propagates (bubbles up) through its ancestors, all the way to the root <html> element.
+                </div>
+
+                <!-- question 5 -->
+                <div class="shadow-md p-5">
+                    <h1 class="font-bold mb-3">Question-5: How do you create, add, and remove elements using JavaScript?
+                    </h1>
+                    <hr>
+                    <p class="mt-3 font-normal"> <span class="font-bold">Answer :</span> Creating Elements, Adding Elements, Removing Elements.
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
 
 
     <!-- javascript -->
@@ -45,7 +107,6 @@
         document.getElementById('blog_site_left').addEventListener('click', function () {
             console.log(window.location.href = 'index.html')
         })
-    </script> 
-
+    </script>
 </body>
 </html>
