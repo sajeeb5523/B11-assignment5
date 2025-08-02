@@ -26,20 +26,20 @@
 <body class="poppins-thin">
     <header class="container mx-auto">
         <nav>
-            <div class="flex justify-between shadow-md mt-1 p-4 rounded-2xl"> 
+            <div class="flex justify-between shadow-md mt-1 p-4 rounded-2xl">
                 <div class="flex items-center gap-3">
                     <img src="assets/logo.png" alt="">
                     <h2 class="text-3xl">Dev<span class="font-bold">Board</span></h2>
                 </div>
-    
+
                 <div class="flex items-center gap-9">
                     <div class="flex items-center gap-1 bg-[#F4F7FF] p-2 rounded-3xl">
 
                         <img class="bg=[#F4F7FF]" src="assets/checkbox.png" alt="">
                         <h1 class="font text-3xl">23</h1>
                     </div>
-                    <img id="" src="assets/theme-btn.png" alt="">
-                    
+                    <img src="assets/theme-btn.png" alt="">
+
                 </div>
             </div>
         </nav>
@@ -49,28 +49,30 @@
     <section class="container mx-auto mt-5">
         <div class="grid grid-cols-2 gap-3">
             <div class="shadow-md mt-1 p-4 rounded-2xl w-[1146px] ">
-    
+
                 <div class="flex justify-around">
                     <div class="flex items-center p-2 gap-6 bg-[#F4F7FF] rounded-xl w-1/4">
                         <img class="ml-3 w-8 h-8 bg-[#FFFFFF] p-2 rounded-3xl" src="assets/checkbox.png" alt="">
                         <div>
                             <h1 class="font-medium text-xs mt-3">Task Assigned</h1>
-                            <h2 class="font-bold text-3xl mb-2">5</h2>
+                            <h2 class="font-bold text-3xl mb-2">6</h2>
                         </div>
                     </div>
-    
-                    <div id="blog_site_open" class="flex items-center p-2 gap-6 bg-[#F4F7FF] rounded-xl bg-gradient-to-r from-[rgba(55,82,253,1)] via-[rgba(108,127,250,1)] to-[rgba(155,168,248,1)] w-[524px] h-[128px] cursor-pointer">
+
+                    <div id="blog_site_open"
+                        class="flex items-center p-2 gap-6 bg-[#F4F7FF] rounded-xl bg-gradient-to-r from-[rgba(55,82,253,1)] via-[rgba(108,127,250,1)] to-[rgba(155,168,248,1)] w-[524px] h-[128px] cursor-pointer">
                         <img class="ml-8" src="assets/board.png" alt="">
                         <div>
                             <p class="font-medium text-2xl mt-3 text-white">Discover Something <br>New Today!</p>
-                            
+
                         </div>
                     </div>
-                    
+
                     <div id="cur_date" class="flex items-center p-2 gap-6 bg-[#F4F7FF] rounded-xl w-1/4">
-                        <img class="ml-3 w-8 h-8 bg-[#FFFFFF] p-2 rounded-3xl" src="assets/calender.png" alt="">
-                        <div>
-                            
+                        <img class="ml-3 w-12 h-12 bg-[#FFFFFF] p-2 rounded-3xl" src="assets/calender.png" alt="">
+                        <div class="flex gap-2">
+                            <p id="day" class="text-lg"></p>
+                            <p id="date" class="text-lg font-medium"></p>
                         </div>
                     </div>
                 </div>
@@ -78,95 +80,113 @@
                 <div class="border border-dashed  border-slate-200	mt-6 mb-6">
 
                 </div>
-    
+
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
                     <div class="card shadow-md p-4 bg-[#F4F7FF] w-[342px] h-[325px] border border-slate-300">
-                        <div class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">ShopEase</div>
+                        <div
+                            class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">
+                            ShopEase</div>
                         <h2 class="text-2xl font-medium mb-4">Fix Mobile Button Issue </h2>
-                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Debug using Chrome DevTools, check for overlappi...</p>
+                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Debug using Chrome
+                            DevTools, check for overlappi...</p>
                         <div class="border border-dashed  border-slate-200 mt-1 mb-1"></div>
                         <div class="flex items-center justify-around">
                             <div>
                                 <h2 class="text-xs text-[#00303C]">Deadline</h2>
                                 <h2 class="text-xl">21 March 2025</h2>
                             </div>
-    
+
                             <button id="alert" class="btn text-white bg-[#3752FD] mt-2 rounded-lg">Completed</button>
                         </div>
                     </div>
-    
+
                     <div class="card shadow-md p-4 bg-[#F4F7FF] w-[342px] h-[325px] border border-slate-300">
-                        <div class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">CloudSync</div>
+                        <div
+                            class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">
+                            CloudSync</div>
                         <h2 class="text-2xl font-medium mb-4">Add Dark Mode </h2>
-                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Store the user's preference in localStorage, update CSS vari...</p>
+                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Store the user's
+                            preference in localStorage, update CSS vari...</p>
                         <div class="border border-dashed  border-slate-200 mt-1 mb-1"></div>
                         <div class="flex items-center justify-around">
                             <div>
                                 <h2 class="text-xs text-[#00303C]">Deadline</h2>
                                 <h2 class="text-xl">21 March 2025</h2>
                             </div>
-    
-                            <button id="alert1"  class="btn text-white bg-[#3752FD] mt-2 rounded-lg">Completed</button>
+
+                            <button id="alert1" class="btn text-white bg-[#3752FD] mt-2 rounded-lg">Completed</button>
                         </div>
                     </div>
-    
+
                     <div class="card shadow-md p-4 bg-[#F4F7FF] w-[342px] h-[325px]">
-                        <div class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">SwiftPay</div>
-                        <h2 class="text-2xl font-medium mb-4">Optimize  Home page </h2>
-                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Debug using Chrome DevTools, check for overlappi...</p>
+                        <div
+                            class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">
+                            SwiftPay</div>
+                        <h2 class="text-2xl font-medium mb-4">Optimize Home page </h2>
+                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Debug using Chrome
+                            DevTools, check for overlappi...</p>
                         <div class="border border-dashed  border-slate-200 mt-1 mb-1"></div>
                         <div class="flex items-center justify-around">
                             <div>
                                 <h2 class="text-xs text-[#00303C]">Deadline</h2>
                                 <h2 class="text-xl">21 March 2025</h2>
                             </div>
-    
+
                             <button id="alert2" class="btn text-white bg-[#3752FD] mt-2 rounded-lg">Completed</button>
                         </div>
                     </div>
-    
-                
+
+
                     <div class="card shadow-md p-4 bg-[#F4F7FF] w-[342px] h-[325px]">
-                        <div class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">Meta</div>
+                        <div
+                            class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">
+                            Meta</div>
                         <h2 class="text-2xl font-medium mb-4">Add new emoji 🤲 </h2>
-                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Debug using Chrome DevTools, check for overlappi...</p>
+                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Debug using Chrome
+                            DevTools, check for overlappi...</p>
                         <div class="border border-dashed  border-slate-200 mt-1 mb-1"></div>
                         <div class="flex items-center justify-around">
                             <div>
                                 <h2 class="text-xs text-[#00303C]">Deadline</h2>
                                 <h2 class="text-xl">21 March 2025</h2>
                             </div>
-    
+
                             <button id="alert3" class="btn text-white bg-[#3752FD] mt-2 rounded-lg">Completed</button>
                         </div>
                     </div>
-    
+
                     <div class="card shadow-md p-4 bg-[#F4F7FF] w-[342px] h-[325px]">
-                        <div class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">Google LLC</div>
+                        <div
+                            class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">
+                            Google LLC</div>
                         <h2 class="text-2xl font-medium mb-4">Integrate OpenAI API </h2>
-                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Debug using Chrome DevTools, check for overlappi...</p>
+                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Debug using Chrome
+                            DevTools, check for overlappi...</p>
                         <div class="border border-dashed  border-slate-200 mt-1 mb-1"></div>
                         <div class="flex items-center justify-around">
                             <div>
                                 <h2 class="text-xs text-[#00303C]">Deadline</h2>
                                 <h2 class="text-xl">21 March 2025</h2>
                             </div>
-    
+
                             <button id="alert4" class="btn text-white bg-[#3752FD] mt-2 rounded-lg">Completed</button>
                         </div>
                     </div>
-    
+
                     <div class="card shadow-md p-4 bg-[#F4F7FF] w-[342px] h-[325px]">
-                        <div class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">Glassdoar</div>
-                        <h2 class="text-2xl font-medium mb-4">Improve Job searching  </h2>
-                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Debug using Chrome DevTools, check for overlappi...</p>
+                        <div
+                            class="text-base font-normal bg-[#FFFFFF] w-[114px] h-[40px] p-2 rounded-lg mb-4 text-center">
+                            Glassdoar</div>
+                        <h2 class="text-2xl font-medium mb-4">Improve Job searching </h2>
+                        <p class="text-xl font-normal rounded-lg text-gray-500 bg-[#FFFFFF] p-4 mb-4">Debug using Chrome
+                            DevTools, check for overlappi...</p>
                         <div class="border border-dashed  border-slate-200 mt-1 mb-1"></div>
                         <div class="flex items-center justify-around">
                             <div>
                                 <h2 class="text-xs text-[#00303C]">Deadline</h2>
                                 <h2 class="text-xl">21 March 2025</h2>
                             </div>
-    
+
                             <button id="alert5" class="btn text-white bg-[#3752FD] mt-2 rounded-lg">Completed</button>
                         </div>
                     </div>
@@ -176,15 +196,22 @@
             <div class="w-[366px] ml-[390px] grid text-center">
                 <div class="shadow-md rounded-md">
                     <div class="flex items-center gap-3 mt-6 justify-center">
-                        <img src="assets/activity.png" alt="">
-                        <h1>Activity Log</h1>
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <img src="assets/activity.png" alt="">
+                                <h1>Activity Log</h1>
+                            </div>
+                            <button id="clearHistory" class="btn text-white bg-[#3752FD] mt-2 rounded-lg">Clear
+                                History</button>
+                        </div>
                     </div>
-                    <button class="btn text-white bg-[#3752FD] mt-2 rounded-lg">Clear History</button>
+                    <div id="activityLogContent" class="p-4 overflow-y-auto text-left">
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-
 
 
 
@@ -198,6 +225,39 @@
 
     <script src="script/btnTheme.js"></script>
     <script src="script/alert.js"></script>
+    <script>
+        function displayDateAndDay() {
+            const today = new Date();
+
+            const months = [
+                'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jub', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+            ];
+
+            const days = [
+                'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'
+            ];
+
+            const numerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+            function toBengaliNumber(num) {
+                return num.toString().split('').map(digit => numerals[parseInt(digit)]).join('');
+            }
+
+            const day = today.getDay();
+            const date = today.getDate();
+            const month = today.getMonth();
+            const year = today.getFullYear();
+
+            const todayDate = `${toBengaliNumber(date)} ${months[month]} ${toBengaliNumber(year)}`;
+            const todayDay = days[day];
+
+            document.getElementById('date').textContent = todayDate;
+            document.getElementById('day').textContent = todayDay;
+        }
+
+        window.addEventListener('load', displayDateAndDay);
+    </script>
 </body>
 
 </html>
